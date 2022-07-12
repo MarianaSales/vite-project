@@ -14,11 +14,11 @@ export function App() {
         role: "Front-End Developer",
       },
       content: [
-        { type: "paragraph", content: "Fala galeraa 👋" },
+        { type: "paragraph", content: "Fala povo 👋" },
         {
           type: "paragraph",
           content:
-            "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
+            "Acabei de subir mais um projeto no meu portifolio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀",
         },
         { type: "paragraph", content: "👇" },
         { type: "link", content: "jane.design/doctorcare " },
@@ -54,6 +54,7 @@ export function App() {
           {post.map((post) => {
             return (
               <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
